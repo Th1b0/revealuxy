@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/nav.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="overlay"></div>
+        <nav>
+            <div class="logo-container">
+                <div class="logo-name"><img src="./img/Color-logo.svg" alt="" class="logo">
+                </div>
+                <div class="socials-language">
+                    <i onclick="openMenu()" class="fa-solid fa-bars"></i>
+                    <ul class="socials">
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-tiktok"></i></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="navbar">
+                <ul class="nav-links">
+                    <li class="menu">
+                        <a class="parent-link" href="#">Consultation</a>
+                        <ul class="sub-links">
+                            <li><a href="#">Épithésiste </a></li>
+                            <li><a href="#">Notre Équipe</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a class="parent-link" href="#">pithèses</a>
+                        <ul class="sub-links">
+                            <li><a href="#">Nos réalisations</a></li>
+                            <li><a href="#">Épithèse orbitaire</a></li>
+                            <li><a href="#"> Épithèse nasale</a></li>
+                            <li><a href="#"> Épithèse auriculaire</a></li>
+                            <li><a href="#">Prothèse complexe</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a class="parent-link" href="#">Prise en charge</a>
+                        <ul class="sub-links">
+                            <li><a href="#"> L’Accompagnement</a></li>
+                            <li><a href="#"> Les Rendez-vous</a></li>
+                            <li><a href="#">Child Link 3</a></li>
+                            <li><a href="#">Documents Légaux
+                                </a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="menu">
+                        <a class="parent-link" href="#">Innovation</a>
+                        <ul class="sub-links">
+                            <li><a href="#"> Numérisation 3D</a></li>
+                            <li><a href="#">Usinage 3D</a></li>
+                            <li><a href="#"> Différents matériaux</a></li>
+                            <li><a href="#"> Moyens de fixation</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a class="parent-link" href="#">Partenaires</a>
+
+                    </li>
+                    <li class="menu">
+                        <a class="parent-link" href="#">Contact</a>
+
+                    </li>
+                    <select class="language-selector" onchange="">
+                        <option value="tr">Français</option>
+                        <option value="en" selected>English</option>
+                        <option value="de">Nederlands</option>
+                    </select>
+                </ul>
+
+            </div>
+            <hr style="margin: 0;">
+        </nav>
+        <section class="hero">
+
+            <div class="hero-container">
+                <div class="hero-slogan-container">
+                    <h1 class="hero-name">Revealuxy</h1>
+                    <h3 class="hero-slogan">Reveal your light with art medical</h3>
+                    <p class="hero-desc">Une épithèse est utilisée pour couvrir et remplacer une partie manquante du
+                        visage : le nez, la région orbito-papébrale, le lobe de l’oreille, etc. Nous visons à fournir
+                        des épithèses qui ressemblent à la réalité et se sentent naturelles pour améliorer l’apparence
+                        et le confort des personnes concernées.</p>
+                </div>
+                <div class="hero-buttons">
+                    <a class="btn1" href="">Découvrez l'épithèse</a>
+                    <a href="">en savoir plus ></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="epithesis-section">
+        <h1 class="epi-center">Nos différentes épithèses</h1>
+        <div class="inner-container">
+            <div class="epithesis-card">
+                <div class="icon">
+                    <i class="fa-solid fa-ear-listen"></i>
+                </div>
+                <h3>Épithèse auriculaire</h3>
+                <p>Elle est utilisée pour remplacer partiellement ou complètement une oreille manquante.</p>
+                <a href="#" class="learn-more">En savoir plus</a>
+            </div>
+            <div class="epithesis-card">
+                <div class="icon">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <h3>Épithèse orbitaire ou oculo-palpébrale</h3>
+                <p>Elle sert à restaurer une partie ou la totalité de la région orbitaire.</p>
+                <a href="#" class="learn-more">En savoir plus</a>
+            </div>
+            <div class="epithesis-card">
+                <div class="icon">
+                    <img src="nose-icon.png" alt="Nose icon">
+                </div>
+                <h3>Épithèse nasale</h3>
+                <p>Elle permet de reconstruire tout ou partie du nez. Cette épithèse peut être temporaire (en attente
+                    d’une
+                    intervention chirurgicale) ou permanente.</p>
+                <a href="#" class="learn-more">En savoir plus</a>
+            </div>
+            <div class="epithesis-card">
+                <div class="icon">
+                    <i class="fa-solid fa-face-smile-beam"></i>
+                </div>
+                <h3>Prothèse complexe</h3>
+                <p>Elle est conçue pour restaurer une perte importante de tissu facial, incluant le menton, les joues,
+                    la
+                    moitié du visage ou en combinaison avec une prothèse maxillo-faciale.</p>
+                <a href="#" class="learn-more">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="./js/main.js"></script>
+
+</html>

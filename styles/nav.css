@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  
+ 
+  font-family: 'Alegreya Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  height: 100vw;
+}
+
+nav {
+  position: relative;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  top: 0;
+  z-index: 1000;
+}
+
+.fa-bars {
+  display: none;
+}
+
+nav .logo-container {
+  padding-block: 0.5rem;
+  margin-inline: 4rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #f18ec7 1px solid;
+
+}
+
+nav .logo-container .socials {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-size: 2rem;
+  background: linear-gradient(to right, #f18ec7, #fad0c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav .logo-container .logo {
+  width: 3.25rem;
+}
+
+nav .navbar {
+  background-color: white;
+  margin-inline: 4rem;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+nav hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-top: 1px solid #ff9a9e;
+}
+
+nav .navbar .nav-links {
+  width: 100%;
+  align-items: center;
+  list-style-type: none;
+  display: flex;
+  gap: 1.25rem;
+}
+
+nav .navbar .nav-links .menu {
+  position: relative;
+}
+
+nav .navbar .nav-links .menu .sub-links {
+  display: none;
+  position: absolute;
+  width: 16rem;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  list-style-type: none;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+nav .navbar .nav-links .menu:hover .sub-links {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+nav .navbar .nav-links .menu .sub-links li {
+  margin: 0.5rem 0;
+}
+
+nav .navbar .nav-links .menu .sub-links li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+nav .navbar .nav-links .menu .sub-links li a:hover {
+  color: #ff9a9e;
+}
+
+nav .navbar .nav-links li a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav .navbar .nav-links li a:hover {
+  color: #ff9a9e;
+  transform: scale(1.1);
+}
+
+nav .navbar .language-selector {
+  padding: 0.25rem;
+  border: 1px solid #ff9a9e;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+nav .navbar .language-selector:hover {
+  background-color: #ffecec;
+}
+
+
+.container {
+  background: url('/img/consultatie.jpg') no-repeat center center/cover;
+
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.overlay {
+  position: absolute  ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Black with 50% opacity */
+  z-index: 1;
+}
+
+.hero-slogan-container {
+  position: relative;
+  color: white;
+  text-align: center;
+  margin-top: 8rem;
+  z-index: 2;
+
+}
+
+.hero-name {
+  text-transform: uppercase;
+  font-size: 6rem;
+  letter-spacing: 0.5rem;
+  background: linear-gradient(to right, #f18ec7, #fad0c4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-slogan {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.hero-desc {
+  max-width: 45%;
+  margin: auto;
+  font-size: 1.25rem;
+  color: rgba(255, 255,255, 0.8);
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.hero-buttons {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.hero-buttons a {
+  font-size: 1.2rem;
+  font-weight: bold ;
+  color: white;
+  text-decoration: none;
+  z-index: 1;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  border: #f18ec7 3px solid;
+  border-radius: 45px;
+}
+.btn1 {
+  background-color: #f18ec7;
+  border: none;
+}
+
+.hero-buttons a:hover{
+  background-color: #f18ec7;
+}
+
+.btn1:hover {
+  background-color: transparent !important;
+}
+
+@media (max-width: 920px) {
+  nav .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  nav .navbar .nav-links {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .epithesis-card {
+    width: 90vw !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero-slogan-container{
+    margin-top: 8rem;
+  }
+  .hero-name {
+    font-size: 2.5rem;
+  }
+
+  .hero-slogan {
+    font-size: 1rem;
+  }
+  .hero-desc {
+    display: none;
+  }
+  .hero-buttons {
+    margin-top: 12rem;
+    flex-direction: column;
+    gap: 1rem;
+    
+  }
+  .hero-buttons a {
+    font-size: 1rem;
+    padding-block: 0.5rem;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .navbar {
+    display: none !important;
+  }
+
+  .socials {
+    display: none !important;
+  }
+  .fa-bars {
+    display: block;
+    font-size: 2rem;
+  }
+}
+
+.visable {
+  display: block !important;
+}
+
+.inner-container {
+  text-align: center;
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+ 
+}
+
+.epi-center {
+  text-align: center;
+  margin-block: 4rem;
+  font-size: 2rem;
+}
+
+
+.epithesis-card {
+  background-color: #fdfdfd;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 40vw;
+}
+
+.epithesis-card .icon {
+  margin-bottom: 15px;
+}
+
+.epithesis-card i {
+  font-size: 1.25rem;
+}
+
+.epithesis-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.epithesis-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.learn-more {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #f18ec7;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #f18ec7;
+}
