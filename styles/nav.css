@@ -201,6 +201,8 @@ nav .navbar .language-selector:hover {
 }
 
 .hero-buttons {
+  position: relative;
+  z-index: 1;
   margin-top: 4rem;
   display: flex;
   justify-content: center;
@@ -354,4 +356,17 @@ nav .navbar .language-selector:hover {
 
 .learn-more:hover {
   background-color: #f18ec7;
+}
+
+/* Default state before animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Active state when in view */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
