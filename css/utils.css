@@ -7,11 +7,11 @@
 
 /* Color Variables */
 :root {
-    --color-primary: #feafc7;
+    --color-primary: #fe81a6;
     --color-secondary: #81d4fa;
-    --color-tertiary: #ffd54f;
+    --color-tertiary: #ffc91a;
 
-    --color-primary-dark: #e94989;
+    --color-primary-dark: #fe81a6;
     --color-secondary-dark: #0288d1;
     --color-tertiary-dark: #ffa000;
 
