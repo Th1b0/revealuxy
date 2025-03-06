@@ -13,7 +13,11 @@ main {
     background-color: var(--color-primary-dark);
     justify-content: center;
     gap: var(--spacing-xxxxl);
-    padding-top: var(--spacing-xxl);
+    padding-block: var(--spacing-xxl);
+    background: linear-gradient(to bottom,
+            #FE9BC6 0%,
+
+            #FFCDE3 100%);
 }
 
 .header-content {
@@ -71,7 +75,7 @@ main {
 
 .header-text p {
     font-size: var(--font-size-md);
-    color: var(--color-white);
+    color: var(--color-black);
     line-height: var(--spacing-lg);
     letter-spacing: 0.1rem;
     text-align: left;
@@ -91,7 +95,7 @@ main {
 
 .header-buttons .header-btn2 {
     width: fit-content;
-    color: var(--color-tertiary);
+    color: var(--color-dark-gray);
     padding: var(--spacing-xs) var(--spacing-md);
     text-decoration: none;
     font-weight: bold;
