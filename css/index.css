@@ -75,7 +75,7 @@ main {
 
 .header-text p {
     font-size: var(--font-size-md);
-    color: var(--color-black);
+    color: var(--color-white);
     line-height: var(--spacing-lg);
     letter-spacing: 0.1rem;
     text-align: left;
